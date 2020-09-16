@@ -1,5 +1,6 @@
 window.addEventListener("load", () => {
   const midLine = document.querySelector(".mid-line");
+  const logoSvg = document.querySelector(".logo-svg");
   let midLineOffT = midLine.offsetTop;
   let midLinedefaultTop = 50;
   let headerHeight = 80;
@@ -13,12 +14,18 @@ window.addEventListener("load", () => {
       console.log("같다");
       midLine.style.position = "fixed";
       midLine.style.top = `${headerHeight}px`;
+      /* eslint-disable */
+      logoSvg.setAttribute("src", "img/Logo.svg");
+      /* eslint-enable */
     }
 
     if (winY < midLineOffT - headerHeight) {
       console.log("작다");
       midLine.style.position = "absolute";
       midLine.style.top = `${midLinedefaultTop}%`;
+      /* eslint-disable */
+      logoSvg.setAttribute("src", "img/Logo-change.svg");
+      /* eslint-enable */
     }
   });
 
