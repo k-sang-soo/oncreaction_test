@@ -86,9 +86,9 @@ header .nav li:last-child {
   margin: 0 auto;
   padding-bottom: 28px;
   opacity: 0;
-  transform: translate(-30px);
-  animation: order2-logo 500ms linear forwards;
-  animation-delay: 5200ms;
+  transform: translateY(30px);
+  animation: order3-logo 500ms linear forwards;
+  animation-delay: 5800ms;
 }
 
 .main .main-logo img {
@@ -152,8 +152,8 @@ footer .social li:nth-child(2) .division {
   transform: translateY(-50%);
   height: 3px;
   background: var(--logo-green);
-  animation: order3-mid-line 500ms linear forwards;
-  animation-delay: 5800ms;
+  animation: order2-mid-line 500ms linear forwards;
+  animation-delay: 5200ms;
   z-index: 99;
 }
 
@@ -188,6 +188,7 @@ footer .social li:nth-child(2) .division {
 }
 
 .work-wrapper .work-title {
+  color: var(--white);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -224,14 +225,14 @@ footer .social li:nth-child(2) .division {
   }
 }
 
-@keyframes order2-logo {
+@keyframes order3-logo {
   100% {
     opacity: 1;
     transform: translate(0);
   }
 }
 
-@keyframes order3-mid-line {
+@keyframes order2-mid-line {
   100% {
     width: 100%;
   }
