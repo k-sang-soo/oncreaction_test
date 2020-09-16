@@ -2,7 +2,7 @@ window.addEventListener("load", () => {
   const midLine = document.querySelector(".mid-line");
   let midLineOffT = midLine.offsetTop;
   let midLinedefaultTop = 50;
-  let headerHeight = 82;
+  let headerHeight = 80;
 
   window.addEventListener("scroll", () => {
     let winY = window.pageYOffset;
@@ -71,4 +71,7 @@ function scrollIndicator(e) {
 
   scrollIndicatorLine.style.width = `${percentage}%`;
   scrollIndicatorEffect.style.left = `${percentage}%`;
+  if (scrollIndicatorEffect.style.left <= "0.5%") {
+    scrollIndicatorEffect.style.left = "-15px";
+  }
 }

@@ -165,7 +165,7 @@ footer .social li:nth-child(2) .division {
 }
 
 .mid-line .scroll-indicator_effect {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 50%;
   left: -15px;
