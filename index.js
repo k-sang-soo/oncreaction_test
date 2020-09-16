@@ -63,8 +63,12 @@ window.addEventListener("load", () => {
 
 function scrollIndicator(e) {
   const scrollIndicatorLine = document.querySelector(".scroll-indicator");
+  const scrollIndicatorEffect = document.querySelector(
+    ".scroll-indicator_effect"
+  );
   const maxHeight = window.document.body.scrollHeight - window.innerHeight;
   const percentage = (window.pageYOffset / maxHeight) * 100;
 
   scrollIndicatorLine.style.width = `${percentage}%`;
+  scrollIndicatorEffect.style.left = `${percentage}%`;
 }

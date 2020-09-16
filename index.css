@@ -157,9 +157,22 @@ footer .social li:nth-child(2) .division {
   z-index: 99;
 }
 
-.scroll-indicator {
+.mid-line .scroll-indicator {
   width: 0;
   height: 3.5px;
+  background: var(--logo-coral);
+  position: relative;
+}
+
+.mid-line .scroll-indicator_effect {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
   background: var(--logo-coral);
 }
 
