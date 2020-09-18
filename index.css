@@ -81,8 +81,13 @@ header .nav li:last-child {
   font-size: 12px;
 }
 
+.main {
+  width: 737px;
+  margin: 0 auto;
+}
+
 .main .main-logo {
-  width: 540px;
+  width: 73%;
   margin: 0 auto;
   padding-bottom: 28px;
   opacity: 0;
@@ -96,12 +101,11 @@ header .nav li:last-child {
 }
 
 .main .ideology {
+  display: inline-block;
   font-size: 22px;
   font-weight: var(--font-regular);
   text-align: center;
   padding-top: 28px;
-  margin: 0 auto;
-  max-width: min-content;
   margin-bottom: 30px;
 }
 
@@ -252,7 +256,7 @@ footer .social li:nth-child(2) .division {
   }
 }
 
-@media screen and (max-width: 1280rem) {
+@media screen and (max-width: 1280px) {
   .home-wrapper {
     padding: 30px 65px 30px 65px;
   }
@@ -260,5 +264,39 @@ footer .social li:nth-child(2) .division {
   header {
     padding-right: 0px;
     padding-left: 65px;
+  }
+
+  header .logo-svg {
+    width: 136px;
+  }
+
+  header .nav {
+    font-size: 16px;
+  }
+
+  header .nav li:last-child() {
+    font-size: 12px;
+  }
+
+  .main {
+    width: 504px;
+    margin: 0 auto;
+  }
+
+  .main .main-logo {
+    padding-bottom: 16px;
+  }
+
+  .main .main-logo img {
+    width: 100%;
+  }
+
+  .main .ideology {
+    font-size: 14px;
+    padding-top: 16px;
+  }
+
+  footer {
+    font-size: 14px;
   }
 }
